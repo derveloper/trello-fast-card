@@ -38,8 +38,6 @@ func main() {
 		log.Fatalf("error: %v", err)
 	}
 
-	log.Println(cfg)
-
 	trelloApiKey, err := keyring.Get(service, user)
 	if err != nil {
 		got, ok := inputbox.InputBox("trello api key", "input trello api key", "")
@@ -63,7 +61,7 @@ func main() {
 	got, ok := inputbox.InputBox("Card Text", "Input card text", "")
 	if ok {
 		card := trello.Card{
-			Name: got,
+			Name:   got,
 			IDList: cfg.IdList,
 		}
 		err := client.CreateCard(&card, trello.Defaults())
