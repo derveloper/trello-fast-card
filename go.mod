@@ -1,4 +1,4 @@
-module trello-fast-card
+module github.com/derveloper/trello-fast-card
 
 go 1.16
 
