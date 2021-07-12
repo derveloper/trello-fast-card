@@ -62,6 +62,7 @@ func main() {
 	if ok {
 		card := trello.Card{
 			Name:   got,
+			Pos:    65535,
 			IDList: cfg.IdList,
 		}
 		err := client.CreateCard(&card, trello.Defaults())
