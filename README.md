@@ -10,7 +10,7 @@ create trello cards fast via a dialog. assign a global keyboard shortcut
 to install, run
 
 ```
-go install github.com/derveloper/trello-fast-card
+go install github.com/derveloper/trello-fast-card@latest
 ```
 
 ## config
